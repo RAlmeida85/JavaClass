@@ -1,12 +1,12 @@
 package com.ralmeida;
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
-    private static Button btnPrint = new Button("Print!");
+    private static Button btnPrintLocal = new Button("Print Local");
+    private static Button btnPrintAnounymous = new Button("Print Anounymous");
 
     public static void main(String[] args) {
         Gearbox mclaren = new Gearbox(6);
@@ -46,10 +46,20 @@ public class Main {
             }
         }
 
-        btnPrint.setOnClickListener(new ClickListener());
+        // btnPrintLocal use local class ClickLisntener
+        btnPrintLocal.setOnClickListener(new ClickListener());
+
+        // below is an example of anonymous class (which is create and used as parameter)
+        btnPrintAnounymous.setOnClickListener(new Button.OnClickListener() {
+            @Override
+            public void onClick(String title) {
+                System.out.println(title + " was clicked!");
+            }
+        });
+
         listen();
 
-        // is an example of anonymous class
+
     }
 
     private static void listen() {
@@ -62,7 +72,10 @@ public class Main {
                     quit = true;
                     break;
                 case 1:
-                    btnPrint.onClick();
+                    btnPrintLocal.onClick();
+                    break;
+                case 2:
+                    btnPrintAnounymous.onClick();
                     break;
             }
 
