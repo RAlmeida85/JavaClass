@@ -29,8 +29,6 @@ public class Main {
         Team<SoccerPlayer> curintia = new Team<>("Curintia");
         Team<SoccerPlayer> santos = new Team<>("Santos");
 
-
-
         palmeiras.matchResult(curintia, 3, 0);
         palmeiras.matchResult(santos, 2, 0);
         santos.matchResult(curintia,1,1);
@@ -45,8 +43,6 @@ public class Main {
 
         System.out.println(palmeiras.compareTo(curintia));
         System.out.println(curintia.compareTo(santos));
-
-
 
         // comparable is helpful to implements as it allow to use
         // Collections.sort to sort any ArrayList based on compareTo method
