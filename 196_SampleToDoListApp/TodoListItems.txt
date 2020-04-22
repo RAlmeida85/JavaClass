@@ -1,0 +1,8 @@
+Birthday card	Buy a 30th birthday card and send to John	16-02-2020
+Doctor's appointment	Visit Dr Anna and bring paperwork	05-03-2020
+Buy dog food	Buy food for dogs for next month	28-02-2020
+Pickup inPost	Pickup packages from inPost before Friday	22-01-2020
+Dream Theater concert	Dream Theater concert at Hala Orbita	16-02-2020
+Teste note	This is the test note	25-03-2020
+Yet another test note	Long description of another test note	24-03-2020
+Highlight deadline test	another test	23-03-2020
